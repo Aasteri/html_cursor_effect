@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Loadind Lottie animation here
     const lottieContainer = document.getElementById('lottie-container');
-    const animationPath = 'animation.json';
+    const animationPath = './animation.json';
     const anim = lottie.loadAnimation({
         container: lottieContainer,
         renderer: 'svg',

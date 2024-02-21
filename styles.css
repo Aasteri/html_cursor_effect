@@ -18,6 +18,7 @@ body {
 
 .text-side {
     flex: 1;
+    padding-top: 30vh !important;
     padding: 20px;
 }
 
@@ -30,8 +31,8 @@ body {
 
 .cursor {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 150px;
+    height: 150px;
     background: radial-gradient(circle, rgba(255, 64, 129, 0.8) 0%, rgba(0, 255, 0, 0.2) 100%);
     /* Gradient smokey effect */
     border-radius: 50%;
@@ -40,8 +41,8 @@ body {
 
 .smoke-particle {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 70px;
+    height: 70px;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 50%;
     pointer-events: none;
