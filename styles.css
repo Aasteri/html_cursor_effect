@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    cursor: none;
+    background: bisque;
+}
+
+.cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, rgba(255, 64, 129, 0.8) 0%, rgba(0, 255, 0, 0.2) 100%);
+    /* Gradient smokey effect */
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.smoke-particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: smokeAnimation 1s ease-out;
+}
+
+@keyframes smokeAnimation {
+    to {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
