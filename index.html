@@ -5,10 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Smoke Trail Cursor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js"></script>
+    <title>Amazing Page</title>
 </head>
 
 <body>
+    <div class="container">
+        <div class="text-side">
+            <h1>Welcome to the Amazing Page</h1>
+            <p>This is some text on one side.</p>
+        </div>
+        <div class="lottie-side" id="lottie-container"></div>
+    </div>
+    <div class="cursor"></div>
+
+    <script>
+        // Load Lottie animation
+        const lottieContainer = document.getElementById('lottie-container');
+        const animationPath = 'your-animation.json';
+        const anim = lottie.loadAnimation({
+            container: lottieContainer,
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: animationPath,
+        });
+
+    </script>
+
     <script src="script.js"></script>
 </body>
 

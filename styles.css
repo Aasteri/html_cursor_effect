@@ -2,7 +2,30 @@ body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     cursor: none;
-    background: bisque;
+    background: linear-gradient(45deg, #00ff00, #008000);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.text-side {
+    flex: 1;
+    padding: 20px;
+}
+
+.lottie-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cursor {
@@ -29,5 +52,15 @@ body {
     to {
         opacity: 0;
         transform: scale(1.5);
+    }
+}
+
+.bounce-animation {
+    animation: bounceAnimation 0.5s ease-in-out alternate infinite;
+}
+
+@keyframes bounceAnimation {
+    to {
+        transform: translateY(-10px);
     }
 }
